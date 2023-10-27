@@ -2,17 +2,44 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/home.jpg" alt="Home" width="100%">
+<head>
+  <!-- other head content -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+
+
+<div class="row g-5 mb-5 my-row">
+  <div class="col-md-6 my-col">
+    <img src="{{ site.github.url }}/assets/img/home.jpg" alt="Home" class="img-fluid my-img">
   </div>
-  <div class="col-md-6 d-flex align-items-center">
-    <div>
-      <h3 class="fw-bold">Jancy Ling Liu</h3>
-      {{ content }}
-    </div>
+  <div class="col-md-6 my-col">
+    <h3 class="fw-bold my-heading">Jancy Ling Liu</h3>
+    <div class="my-content">
+
+<p>Ph.D. Candidate in School of Economics <br>
+      Georgia Institude of Technology
+</p>
+<p> Welcome! I am a 5th-year Ph.D. canddiate in School of Economics at Georgia Tech. My fields of interests are Energy and Environmental Economics,
+  Applied Microeconomics, Experimental Economics, with a particular emphasis on energy transition, migration, and climate policy.
+</p>
+
+</div>
   </div>
 </div>
+
+
+<!--<div class="row g-5 mb-5">-->
+<!--  <div class="col-md-6">-->
+<!--    <img src="{{ site.github.url }}/assets/img/home.jpg" alt="Home" class="img-fluid" style="width: 80%; margin-bottom: 0;">-->
+<!--  </div>-->
+<!--  <div class="col-md-6" style="padding-top: 0;">-->
+<!--    <h3 class="fw-bold" style="margin-bottom: 20px;">Jancy Ling Liu</h3>-->
+<!--    <div style="margin-top: 10px;">{{ content }}</div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
 
 <!--<div class="row g-5 mb-5">-->
 <!--  <div class="col-md-6">-->

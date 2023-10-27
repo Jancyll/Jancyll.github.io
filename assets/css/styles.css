@@ -1,0 +1,21 @@
+.my-row {
+  margin-bottom: 0 !important;
+}
+
+.my-col {
+  padding: 0 !important;
+}
+
+.my-img {
+  width: 80%;
+  margin-bottom: 0 !important;
+}
+
+.my-heading {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+.my-content {
+  margin-top: 0 !important;
+}
