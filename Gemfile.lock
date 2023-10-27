@@ -71,6 +71,7 @@ PLATFORMS
 
 DEPENDENCIES
   academic-jekyll-theme!
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.4.21
