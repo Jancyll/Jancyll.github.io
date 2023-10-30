@@ -1,18 +1,41 @@
 <head>
+  <!-- Setting the viewport to ensure your site is responsive and scales correctly on different devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Declaring the character encoding for the HTML document -->
   <meta charset="utf-8">
+  <!-- Setting the title of your webpage, displayed on the browser tab -->
   <title>{{ page.title }} | {{ site.title }}</title>
+  <!-- Linking to the Bootstrap CSS for styling -->
   <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
+  <!-- Linking to the Font Awesome library for icons, with defer to ensure it doesn’t block rendering -->
   <script defer src="{{ site.github.url }}/assets/libs/fontawesome/all.min.js"></script>
-   <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <!-- Linking to your main custom stylesheet -->
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
+  <!-- Linking to Font Awesome from a CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/apple-icon-152x152.png">
-  <link rel="shortcut icon" href="{{ site.github.url }}/assets/favicon.ico">
+  <!-- Defining an icon for Apple devices when your site is added to the home screen -->
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/img/home.jpg">
+  <!-- Defining a favicon for your site -->
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="{{ site.github.url }}/assets/img/home.jpg">
+  <!-- Preconnecting to Google Fonts to improve loading performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <!-- Add Bootstrap CSS -->
+  <!-- Linking to the Bootstrap CSS from a CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Linking to the Google Roboto font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Add Bootstrap JavaScript (with Popper) -->
+  <!-- Linking to the Bootstrap JavaScript and Popper.js from a CDN, with defer to ensure it doesn’t block rendering -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Linking to your custom styles -->
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <!-- Open Graph Tags for improving the appearance of content shared on social media like Facebook -->
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url | prepend: site.baseurl }}">
+  <meta property="og:image" content="{{ '/assets/img/home.jpg' | prepend: site.url | prepend: site.baseurl }}">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card tags for improving the appearance of content shared on Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/img/home.jpg' | prepend: site.url | prepend: site.baseurl }}">
 </head>
