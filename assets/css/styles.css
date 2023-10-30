@@ -1,18 +1,20 @@
 .my-row {
-  margin-bottom: 0 !important;
+  margin-bottom: 10 !important;
 }
 
 .my-col {
-  padding: 0 !important;
+  padding: 10 !important;
 }
 
 .my-img {
-  width: 90%;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 10px !important;
 }
 
+
 .my-heading {
-  margin-top: 0 !important;
+  margin-top: 10 !important;
   margin-bottom: 10px !important;
 }
 
