@@ -1,0 +1,31 @@
+instructor:
+  - name: "ECON 2100 Economics and Policy"
+    term: "Summer 2022, Spring 2023"
+    url: "EC202_Summer2019.html"
+    syllabus: "ECON2100_Syllabus_Spring_2023_jl_full_jan.pdf"
+    evaluation1: "Liu_2022_Summer_ECON_2100_Economics_and_Policy_SF1.pdf"
+    evaluation2: "Liu_2023_Spring_ECON_2100_Economics_and_Policy_NP1.pdf"
+
+
+teaching_assistant:
+  - name: "ECON 4180 Game Theory"
+    term: "Fall 2023"
+  - name: "ECON 2106 Principles of Microeconomics"
+    term: "Fall 2022, Fall 2021"
+  - name: "ECON 7023 Econometrics II (Graduate)"
+    term: "Spring 2021"
+  - name: "ECON 2101 The Global Economy"
+    term: "Summer 2021, Fall 2020"
+  - name: "ECON 4232/8803 Labor Economics"
+    term: "Spring 2020, Spring 2021, Spring 2019"
+  - name: "ECON 4340 Industrial Organization"
+    term: "Fall 2019"
+
+awards:
+  - name: 'Tech to Teaching Certificate'
+    institution: "Center for Teaching and Learning, Georgia Tech"
+    date: "2022"
+    url: "https://ctl.gatech.edu/content/tech-teaching-0"
+  - name: "Outstanding Online Teaching Assistant"
+    institution: "School of Economics, Georgia Tech"
+    date: "2021"

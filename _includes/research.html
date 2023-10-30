@@ -1,0 +1,92 @@
+<!--<div class="row g-5 mb-5">-->
+<!--  <div>-->
+<!--    <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3>-->
+<!--    {% if page.title == "Home" %}-->
+<!--      {% for item in site.data.publications.featured %}-->
+<!--        <p><a href="{{ item.url }}">{{ item.name }}</a></p>-->
+<!--      {% endfor %}-->
+<!--    {% else %}-->
+<!--      {% for item in site.data.publications.index %}-->
+<!--        <p><a href="{{ item.url }}">{{ item.name }}</a></p>-->
+<!--      {% endfor %}-->
+<!--    {% endif %}-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="container my-5">
+    <h2 class=" border-bottom pb-3 mb-5">Research</h2>
+
+    <div class="mb-4">
+        <h4 class=" mb-3">Working Papers</h4>
+        {% for item in site.data.research.working_papers %}
+            <div class="mb-3">
+<!--                {% if item.url %}-->
+<!--                    <p class="mb-1"> <a href="{{ site.github.url }}/papers/JMP_Jancy_Liu_2023.pdf" style="font-weight: bold;">{{ item.name }}</a> <em>(Job Market Paper)</em></p>-->
+<!--                {% else %}-->
+<!--                    <p class="mb-1"> <a style="font-weight: bold;">{{ item.name }}</a> <em>(with {{ item.coauthors }})</em> </p>-->
+<!--                {% endif %}-->
+
+                {% if item.url %}
+                    <p class="mb-1"> <a href="{{ site.github.url }}/papers/JMP_Jancy_Liu_2023.pdf" style="font-weight: bold;">{{ item.name }}</a> <em>(Job Market Paper)</em></p>
+                {% endif %}
+
+                {% if item.coauthors %}
+                    {% for coauthor in item.coauthors %}
+                   <p class="mb-1"> <a style="font-weight: bold;">{{ item.name }}</a>  <em>(with <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>, draft upon request)</em>{% if forloop.last == false %}, {% endif %}
+                 {% endfor %}
+                    </p>
+                {% endif %}
+
+
+<!--                        {% if item.coauthors %}-->
+<!--          <p><strong>Coauthors:</strong> -->
+<!--            {% for coauthor in item.coauthors %}-->
+<!--              <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% if forloop.last == false %}, {% endif %}-->
+<!--            {% endfor %}-->
+<!--          </p>-->
+<!--        {% endif %}-->
+
+                {% if item.related_info %}
+                    <p style="font-size: 0.8em;"> <em>{{ item.related_info }}</em>  </p>
+                {% endif %}
+
+                {% if item.abstract %}
+                    <p class="mb-0"><strong>Abstract:</strong> {{ item.abstract }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="mb-4">
+        <h4 class="mb-3">Works in Progress</h4>
+        {% for item in site.data.research.works_in_progress %}
+            <div class="mb-2">
+
+                {% if item.coauthors %}
+                    {% for coauthor in item.coauthors %}
+                   <p class="mb-1"> <a >{{ item.name }}</a>  <em>(with <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>)</em>{% if forloop.last == false %}, {% endif %}
+                 {% endfor %}
+                    </p>
+                {% endif %}
+                
+            </div>
+        {% endfor %}
+    </div>
+
+<div class="mb-4">
+    <h4 class=" mb-3">Publications</h4>
+    {% for item in site.data.research.published_papers %}
+        <div class="citation mb-3">
+            {% if item.url %}
+                <p class="mb-1"><a href="{{ item.url }}" style="text-decoration: none; color: black;">{{ item.citation }}</a></p>
+            {% else %}
+                <p class="mb-1">{{ item.citation }}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+
+</div>
+

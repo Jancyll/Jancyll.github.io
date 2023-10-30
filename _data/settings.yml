@@ -1,7 +1,7 @@
 menu:
 #- {name: 'people', url: '/people'}
-- {name: 'Research', url: '/publications'}
-- {name: 'Teaching', url: '/courses'}
+- {name: 'Research', url: '/research'}
+- {name: 'Teaching', url: '/teaching'}
 - {name: 'CV', url: '/cv'}
 #- {name: 'contact', url: '/contact'}
 
@@ -16,10 +16,14 @@ courses:
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-- {icon: 'envelope', link: 'mailto: jancyll@gatech.edu'}
-- {icon: 'github', link: 'https://github.com/Jancyll'}
-- {icon: 'twitter', link: 'https://twitter.com/econ_ling'}
-- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jancy-ling-liu-2018416a/'}
+#- {icon: 'envelope', link: 'mailto: jancyll@gatech.edu'}
+#- {icon: 'github', link: 'https://github.com/Jancyll'}
+#- {icon: 'twitter', link: 'https://twitter.com/econ_ling'}
+#- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jancy-ling-liu-2018416a/'}
+- {icon: 'envelope', link: 'mailto: jancyll@gatech.edu', prefix: 'fas'}
+- {icon: 'github', link: 'https://github.com/Jancyll', prefix: 'fab'}
+- {icon: 'twitter', link: 'https://twitter.com/econ_ling', prefix: 'fab'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jancy-ling-liu-2018416a/', prefix: 'fab'}
 
 contacts:
 - {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
