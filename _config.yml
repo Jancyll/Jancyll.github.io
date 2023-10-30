@@ -2,3 +2,5 @@ url: "http://www.jancylingliu.com" # the base hostname & protocol for your site,
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Jancy Ling Liu" # the name of your site, e.g. ACME Corp.
 description: "Welcome! I am a 5th-year Ph.D. candidate in the School of Economics at Georgia Tech and on the 2023-2024 job market."
+plugins:
+  - jekyll-sitemap
