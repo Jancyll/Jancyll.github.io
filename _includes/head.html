@@ -4,7 +4,7 @@
   <!-- Declaring the character encoding for the HTML document -->
   <meta charset="utf-8">
   <!-- Setting the title of your webpage, displayed on the browser tab -->
-  <title> Jancy Ling Liu </title>
+  <title>Jancy Ling Liu | {{ site.title }}</title>
   <!-- Linking to the Bootstrap CSS for styling -->
   <link rel="stylesheet" href="{{ site.github.url }}/assets/libs/bootstrap/bootstrap.min.css">
   <!-- Linking to the Font Awesome library for icons, with defer to ensure it doesn’t block rendering -->
@@ -28,7 +28,7 @@
   <!-- Linking to your custom styles -->
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
   <!-- Open Graph Tags for improving the appearance of content shared on social media like Facebook -->
-  <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+  <meta property="og:title" content="Jancy Ling Liu | {{ site.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:url" content="{{ page.url | prepend: site.url | prepend: site.baseurl }}">
   <meta property="og:image" content="{{ '/assets/img/home.jpg' | prepend: site.url | prepend: site.baseurl }}">
