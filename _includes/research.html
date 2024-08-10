@@ -22,13 +22,13 @@
         {% for item in site.data.research.working_papers %}
             <div class="mb-3">
 <!--                {% if item.url %}-->
-<!--                    <p class="mb-1"> <a href="{{ site.github.url }}/papers/JMP_Jancy_Liu_2023.pdf" style="font-weight: bold;">{{ item.name }}</a> <em>(Job Market Paper)</em></p>-->
+<!--                    <p class="mb-1"> <a href="{{ site.github.url }}/papers/JMP_Jancy_Liu_2023.pdf" style="font-weight: bold;">{{ item.name }}</a> </p>-->
 <!--                {% else %}-->
 <!--                    <p class="mb-1"> <a style="font-weight: bold;">{{ item.name }}</a> <em>(with {{ item.coauthors }})</em> </p>-->
 <!--                {% endif %}-->
 
                 {% if item.url %}
-                    <p class="mb-1"> <a href="{{ site.github.url }}/papers/JMP_Jancy_Liu_2023.pdf" style="font-weight: bold;">{{ item.name }}</a> <em>(Job Market Paper)</em></p>
+                    <p class="mb-1"> <a href="{{ site.github.url }}/papers/JMP_Jancy_Liu_2023.pdf" style="font-weight: bold;">{{ item.name }}</a> </p>
                 {% endif %}
 
                 {% if item.coauthors %}
