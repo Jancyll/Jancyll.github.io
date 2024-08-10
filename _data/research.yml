@@ -23,23 +23,32 @@ working_papers:
         url: 'https://besedes.econ.gatech.edu/'
 
 works_in_progress:
-  - name: 'The Effects of Hurricanes on Crimes'
-    coauthors:
-      - name: 'Karen X. Yan'
-        url: 'https://sites.google.com/view/karenyan/home?authuser=0'
-  - name: 'Sorting Over Local Public Goods: Evidence From Energy Transition'
+  # - name: 'The Effects of Hurricanes on Crimes'
+  #   coauthors:
+  #     - name: 'Karen X. Yan'
+  #       url: 'https://sites.google.com/view/karenyan/home?authuser=0'
+  - name: 'Energy Transition and Mental Health'
     coauthors:
       - name: 'Dylan Brewer'
         url: 'https://www.dylanbrewer.com/'
+      - name: 'Kaiyi Wen'
+        url: 'https://www.kaiyiwen.com/'
   - name: 'The Effects of Power Plant Closures on Mortality'
     coauthors:
       - name: 'Dylan Brewer'
         url: 'https://www.dylanbrewer.com/'
+  # - name: 'Sorting Over Local Public Goods: Evidence From Energy Transition'
+  #   coauthors:
+  #     - name: 'Dylan Brewer'
+  #       url: 'https://www.dylanbrewer.com/'
 #  - name: 'Title of Work in Progress 2'
 #    url: '/path/to/work_in_progress_2.pdf'
   # ... Add more works in progress as needed
 
 published_papers:
+  - name: 'Sample Publication Title'
+    url: 'https://www.nature.com/articles/s41598-022-18245-1'
+    citation: 'He, Q., Liu, J. L., Eschapasse, L., Zagora, A. K., Brown, T. I. (2023). The neural correlates of memory integration in value-based decision-making during human spatial navigation. <em>Neuropsychologia</em>, 108758.'
   - name: 'Sample Publication Title'
     url: 'https://www.nature.com/articles/s41598-022-18245-1'
     citation: 'He, Q., Liu, J. L., Eschapasse, L., Beveridge, E. H., & Brown, T. I. (2022). A comparison of reinforcement learning models of human spatial navigation. <em>Scientific Reports</em>, 12(1), 13923.'

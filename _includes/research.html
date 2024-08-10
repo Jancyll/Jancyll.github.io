@@ -62,17 +62,19 @@
         <h4 class="mb-3">Works in Progress</h4>
         {% for item in site.data.research.works_in_progress %}
             <div class="mb-2">
-
-                {% if item.coauthors %}
-                    {% for coauthor in item.coauthors %}
-                   <p class="mb-1"> <a >{{ item.name }}</a>  <em>(with <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>)</em>{% if forloop.last == false %}, {% endif %}
-                 {% endfor %}
-                    </p>
-                {% endif %}
-                
+                <p class="mb-1">
+                    <a>{{ item.name }}</a>
+                    {% if item.coauthors %}
+                        <em>(with 
+                        {% for coauthor in item.coauthors %}
+                            <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% if forloop.last == false %}, {% endif %}
+                        {% endfor %})</em>
+                    {% endif %}
+                </p>
             </div>
         {% endfor %}
     </div>
+    
 
 <div class="mb-4">
     <h4 class=" mb-3">Publications</h4>

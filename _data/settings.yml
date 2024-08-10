@@ -18,7 +18,7 @@ social:
 #- {icon: 'github', link: 'https://github.com/Jancyll'}
 #- {icon: 'twitter', link: 'https://twitter.com/econ_ling'}
 #- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jancy-ling-liu-2018416a/'}
-- {icon: 'envelope', link: 'mailto: jancyll@gatech.edu', prefix: 'fas'}
+- {icon: 'envelope', link: 'mailto: jliu@wooster.edu', prefix: 'fas'}
 - {icon: 'github', link: 'https://github.com/Jancyll', prefix: 'fab'}
 - {icon: 'twitter', link: 'https://twitter.com/econ_ling', prefix: 'fab'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/jancy-ling-liu-2018416a/', prefix: 'fab'}
