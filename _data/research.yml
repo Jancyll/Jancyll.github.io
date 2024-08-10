@@ -9,7 +9,7 @@
 working_papers:
   - name: 'Powering Down and Moving On? Energy Transition, Gentrification, and Local Impacts'
     url: ''
-    related_info: ' Camp Resources XXIX, 24th CU Environmental & Resource Economics Workshop, SWEEEP 2023'
+    # related_info: ' Camp Resources XXIX, 24th CU Environmental & Resource Economics Workshop, SWEEEP 2023'
     abstract: ' This study investigates the effects of fossil fuel power plant closures on local migration. I leverage variation in fuel prices and plant age that results in plausibly exogenous power plant retirements. The retirement results in a “stagnation effect” where both in-migration and out-migration decreases, a pattern not consistent with a typical gentrification result of increased in and out migration. My analysis shows that the stagnation effect is more pronounced in lower-income and predominantly Black communities, raising environmental justice concerns. These findings underscore the complex interplay between the environmental advantages and local economic challenges associated with phasing out fossil fuel infrastructure.'
 #    url: '/path/to/job_market_paper_1.pdf'
 #  - name: 'Title of Job Market Paper 2'
