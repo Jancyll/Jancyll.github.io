@@ -16,6 +16,7 @@ working_papers:
 #    url: '/path/to/job_market_paper_2.pdf'
 #  # ... Add more job market papers as needed
   - name: 'Energy Transition and Mental Health'
+    abstract: ''
     coauthors:
       - name: 'Dylan Brewer'
         url: 'https://www.dylanbrewer.com/'
@@ -23,7 +24,8 @@ working_papers:
         url: 'https://www.kaiyiwen.com/'
       - name: 'Yueming (Lucy) Qiu'
         url: 'https://sites.google.com/site/yueminglucyqiu'
-    - name: 'Are People Fleeing States with Abortion Bans?'
+  - name: 'Are People Fleeing States with Abortion Bans?'
+    abstract: ''
     coauthors:
       - name: 'Daniel Dench'
         url: 'https://www.danieldench.com/'
