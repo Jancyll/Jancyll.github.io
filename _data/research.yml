@@ -15,6 +15,22 @@ working_papers:
 #  - name: 'Title of Job Market Paper 2'
 #    url: '/path/to/job_market_paper_2.pdf'
 #  # ... Add more job market papers as needed
+  - name: 'Energy Transition and Mental Health'
+    coauthors:
+      - name: 'Dylan Brewer'
+        url: 'https://www.dylanbrewer.com/'
+      - name: 'Kaiyi Wen'
+        url: 'https://www.kaiyiwen.com/'
+      - name: 'Yueming (Lucy) Qiu'
+        url: 'https://sites.google.com/site/yueminglucyqiu'
+    - name: 'Are People Fleeing States with Abortion Bans?'
+    coauthors:
+      - name: 'Daniel Dench'
+        url: 'https://www.danieldench.com/'
+      - name: 'Kelly Lifchez'
+        # url: ''
+      - name: 'Jason Lindo'
+        url: 'https://sites.gatech.edu/jasonlindo/'
   - name: 'Social Norms on the Consumption of Eco-labeled Products'
     # related_info: ' Society for the Advancement of Behavioral Economics Conference 2022, SEA-AERE 2022'
     abstract: 'This study investigates the impact of social norms information on consumer behavior regarding eco-labeled products. I focus on three types of norms: injunctive norms, descriptive norms, and working-together normative appeals. Through a choice experiment, I explore how different norms interact with multiple eco-labels. Notably, descriptive norms begin to influence consumer choices when 50% or more of consumers are reported to purchase the product. Consumers exhibit a willingness to pay a premium for eco-labels, and this willingness increases with the number of labels presented. Under treatments involving injunctive norms and working-together appeals, both descriptive norms information and certified eco-labels contribute to higher willingness-to-pay values. These findings provide insights for promoting green consumption and environmental improvement through strategic norms communication.'
@@ -27,16 +43,19 @@ works_in_progress:
   #   coauthors:
   #     - name: 'Karen X. Yan'
   #       url: 'https://sites.google.com/view/karenyan/home?authuser=0'
-  - name: 'Energy Transition and Mental Health'
+
+  - name: 'The Energy Transition and Mortality'
     coauthors:
       - name: 'Dylan Brewer'
         url: 'https://www.dylanbrewer.com/'
-      - name: 'Kaiyi Wen'
-        url: 'https://www.kaiyiwen.com/'
-  - name: 'The Effects of Power Plant Closures on Mortality'
+      - name: 'Eleanor Krause'
+        url: 'https://sites.google.com/view/eleanorkrause'
+  - name: 'Impact of IRA on Energy Transition: Evidence from Energy Communities Tax Credits'
     coauthors:
-      - name: 'Dylan Brewer'
-        url: 'https://www.dylanbrewer.com/'
+      - name: 'Xiaochen Sun'
+        url: 'https://xiaochensun.netlify.app/'
+      - name: 'Gaurav Doshi'
+        url: 'https://www.gauravecon.com/'
   # - name: 'Sorting Over Local Public Goods: Evidence From Energy Transition'
   #   coauthors:
   #     - name: 'Dylan Brewer'
