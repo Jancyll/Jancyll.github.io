@@ -45,7 +45,8 @@
                             <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>
                         {% else %}
                             {{ coauthor.name }}
-                        {% endif %}{% if forloop.last == false %}, {% endif %}
+                        {% endif -%}
+                        {% if forloop.last == false %}, {% endif %}
                     {%- endfor %}</em>
                 {% endif %}
                 
@@ -67,7 +68,8 @@
                             <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>
                         {% else %}
                             {{ coauthor.name }}
-                        {% endif %}{% if forloop.last == false %}, {% endif %}
+                        {% endif -%}
+                        {% if forloop.last == false %}, {% endif %}
                     {%- endfor %}</em>
                 {% endif %}
                 </p>
