@@ -7,6 +7,15 @@
 #- {name: 'Powering Down and Moving On? Energy Transition, Gentrification, and Local Impacts', url: 'http://ms.mcmaster.ca/kevla/pdf/articles/PhilTransRSoc_2013.pdf'}
 
 working_papers:
+  - name: 'Are People Fleeing States with Abortion Bans?'
+    abstract: ''
+    coauthors:
+      - name: 'Daniel Dench'
+        url: 'https://www.danieldench.com/'
+      - name: 'Kelly Lifchez'
+        url: ''
+      - name: 'Jason Lindo'
+        url: 'https://sites.gatech.edu/jasonlindo/'
   - name: 'Powering Down and Moving On? Energy Transition, Gentrification, and Local Impacts'
     url: 'energytransition_migration_JL.pdf'
     # related_info: ' Camp Resources XXIX, 24th CU Environmental & Resource Economics Workshop, SWEEEP 2023'
@@ -24,15 +33,6 @@ working_papers:
         url: 'https://www.kaiyiwen.com/'
       - name: 'Yueming (Lucy) Qiu'
         url: 'https://sites.google.com/site/yueminglucyqiu'
-  - name: 'Are People Fleeing States with Abortion Bans?'
-    abstract: ''
-    coauthors:
-      - name: 'Daniel Dench'
-        url: 'https://www.danieldench.com/'
-      - name: 'Kelly Lifchez'
-        url: ''
-      - name: 'Jason Lindo'
-        url: 'https://sites.gatech.edu/jasonlindo/'
   - name: 'Social Norms on the Consumption of Eco-labeled Products'
     # related_info: ' Society for the Advancement of Behavioral Economics Conference 2022, SEA-AERE 2022'
     abstract: 'This study investigates the impact of social norms information on consumer behavior regarding eco-labeled products. I focus on three types of norms: injunctive norms, descriptive norms, and working-together normative appeals. Through a choice experiment, I explore how different norms interact with multiple eco-labels. Notably, descriptive norms begin to influence consumer choices when 50% or more of consumers are reported to purchase the product. Consumers exhibit a willingness to pay a premium for eco-labels, and this willingness increases with the number of labels presented. Under treatments involving injunctive norms and working-together appeals, both descriptive norms information and certified eco-labels contribute to higher willingness-to-pay values. These findings provide insights for promoting green consumption and environmental improvement through strategic norms communication.'
