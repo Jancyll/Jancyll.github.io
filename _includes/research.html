@@ -25,6 +25,8 @@
 <!--                     <a>{{ item.name }}</a> -->
                      {% if item.url %}
                     <p class="mb-1"> <a href="item.url" style="font-weight: bold;">{{ item.name }}</a> </p>
+                {% else %}
+                    <a>{{ item.name }}</a>
                 {% endif %} -->
                     
                     {% if item.coauthors %}
