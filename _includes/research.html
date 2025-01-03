@@ -29,9 +29,13 @@
                 {% endif %}
                 
                 {% if item.coauthors %}
-                    <em>(with 
-                    {% for coauthor in item.coauthors %}
-                        <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% if forloop.last == false %}, {% endif %}
+                        <em>(with 
+                        {% for coauthor in item.coauthors -%}
+                            {% if coauthor.url %}
+                                <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>
+                            {% else %}
+                                {{ coauthor.name }}
+                            {% endif %}{% if forloop.last == false %}, {% endif %}
                     {% endfor %})</em>
                 {% endif %}
             </p>
