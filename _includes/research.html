@@ -23,7 +23,7 @@
         <div class="mb-3">
             <p class="mb-1">
                 {% if item.url %}
-                    <a href="{{ item.url }}" style="font-weight: bold;">{{ item.name }}</a>
+                    <a href="{{ site.github.url }}/papers/{{ item.url | split: '/' | last }}" style="font-weight: bold;">{{ item.name }}</a>
                 {% else %}
                     <a>{{ item.name }}</a>
                 {% endif %}
