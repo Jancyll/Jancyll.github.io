@@ -71,17 +71,17 @@
             <div class="mb-2">
                 <p class="mb-1">
                     <a>{{ item.name }}</a>
-                {% if item.coauthors %}
-                    <em><br>with 
-                    {% for coauthor in item.coauthors -%}
-                        {% if coauthor.url %}
-                            <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>
-                        {% else %}
-                            {{ coauthor.name }}
-                        {% endif -%}
-                        {% if forloop.last == false %}, {% endif %}
-                    {%- endfor %}</em>
-                {% endif %}
+                    
+                {% if item.coauthors -%}
+                    <em><br>with {% for coauthor in item.coauthors 
+                        %}{% if coauthor.url 
+                            %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{%- 
+                    else 
+                        %}{{ coauthor.name }}{%- 
+                    endif %}{% if forloop.last == false %}, {% endif 
+                    %}{% endfor %}</em>
+                {%- endif %}                    
+                    
                 </p>
             </div>
         {% endfor %}
