@@ -30,7 +30,7 @@
                 
                 {% if item.coauthors %}
                     <em>(with 
-                    {% for coauthor in item.coauthors %}
+                    {% for coauthor in item.coauthors -%}
                         <a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% if forloop.last == false %}, {% endif %}
                     {% endfor %})</em>
                 {% endif %}
