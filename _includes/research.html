@@ -22,7 +22,11 @@
         {% for item in site.data.research.working_papers %}
             <div class="mb-3">
                 <p class="mb-1">
-                    <a>{{ item.name }}</a>
+<!--                     <a>{{ item.name }}</a> -->
+                     {% if item.url %}
+                    <p class="mb-1"> <a href="item.url" style="font-weight: bold;">{{ item.name }}</a> </p>
+                {% endif %} -->
+                    
                     {% if item.coauthors %}
                         <em>(with 
                         {% for coauthor in item.coauthors %}
