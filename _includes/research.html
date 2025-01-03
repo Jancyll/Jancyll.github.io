@@ -50,15 +50,17 @@
                     {%- endfor %}</em>
                 {% endif %} -->
 
-                {% if item.coauthors -%}
+                {% if item.coauthors %}
                     <em><br>with {% for coauthor in item.coauthors 
                         %}{% if coauthor.url 
                             %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{%- 
-                    else 
-                        %}{{ coauthor.name }}{%- 
-                    endif %}{% if forloop.last == false %}, {% endif 
+                        else 
+                            %}{{ coauthor.name }}{%- 
+                        endif %}{% if forloop.last == false 
+                            %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif 
+                        %}{% endif 
                     %}{% endfor %}</em>
-                {%- endif %}
+                {% endif %}
                 
             </p>
         </div>
