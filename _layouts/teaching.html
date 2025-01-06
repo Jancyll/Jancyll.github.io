@@ -6,32 +6,32 @@ layout: default
 
 <div class="container my-5">
   <div>
-    <h2 class=" border-bottom pb-3 mb-5">Teaching</h2>
+    <h2 class=" border-bottom pb-3 mb-5">Courses Taught</h2>
 
   <div class="mb-5">
-    <h4 class=" mb-3">Instructor</h4>
+    <h4 class=" mb-3">Georgia Institute of Technology, School of Economics</h4>
     {% for course in site.data.courses.instructor %}
       <div class="mb-3">
         <a> {{ course.name }}</a>: {{ course.term }}
-        <br>
+<!--         <br>
         <em> <a href="{{ site.github.url }}/courses/{{ course.syllabus }}">Syllabus</a>,
         <a href="{{ site.github.url }}/courses/{{ course.evaluation1 }}">Evaluation1</a>,
-        <a href="{{ site.github.url }}/courses/{{ course.evaluation2 }}">Evaluation2</a></em>
+        <a href="{{ site.github.url }}/courses/{{ course.evaluation2 }}">Evaluation2</a></em> -->
       </div>
     {% endfor %}
   </div>
 
-      <div class="mb-5">
+<!--       <div class="mb-5">
     <h4 class=" mb-3">Teaching Assistant</h4>
     {% for course in site.data.courses.teaching_assistant %}
       <p>
         <a>{{ course.name }}</a>: {{ course.term }}<br>
       </p>
     {% endfor %}
-  </div>
+  </div> -->
 
     <div class="mb-5">
-    <h4 class="mb-3">Teaching Certificates & Awards</h4>
+    <h4 class="mb-3">Teaching Awards</h4>
     {% for award in site.data.courses.awards %}
       <div class="mb-3">
         {% if award.url %}
