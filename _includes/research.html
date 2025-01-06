@@ -57,8 +57,11 @@
                         else 
                             %}{{ coauthor.name }}{%- 
                         endif %}{% if forloop.last == false 
-                            %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif 
-                        %}{% endif 
+                            %}{% if forloop.length > 2 
+                                %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif 
+                                %}{% else 
+                                %} and {% endif 
+                            %}{% endif 
                     %}{% endfor %}</em>
                 {% endif %}
                 
