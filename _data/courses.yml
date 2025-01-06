@@ -6,6 +6,16 @@ instructor:
     evaluation1: "Liu_2022_Summer_ECON_2100_Economics_and_Policy_SF1.pdf"
     evaluation2: "Liu_2023_Spring_ECON_2100_Economics_and_Policy_NP1.pdf"
 
+wooster_instructor:
+  - name: "ECON 10100 Principles of Economics"
+    term: "Fall 2024, Spring 2025"
+    # url: "EC202_Summer2019.html"
+    # syllabus: "ECON2100_Syllabus_Spring_2023_jl_full_jan.pdf"
+    # evaluation1: "Liu_2022_Summer_ECON_2100_Economics_and_Policy_SF1.pdf"
+    # evaluation2: "Liu_2023_Spring_ECON_2100_Economics_and_Policy_NP1.pdf"
+  - name: "ECON 11000 Quantitative Methods"
+    term: "Fall 2024, Spring 2025"
+
 
 teaching_assistant:
   - name: "ECON 4180 Game Theory"
