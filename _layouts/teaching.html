@@ -8,6 +8,19 @@ layout: default
   <div>
     <h2 class=" border-bottom pb-3 mb-5">Courses Taught</h2>
 
+      <div class="mb-5">
+    <h5 class=" mb-3">The College of Wooster</h5>
+    {% for course in site.data.courses.wooster_instructor %}
+      <div class="mb-3">
+        <a> {{ course.name }}</a>: {{ course.term }}
+<!--         <br>
+        <em> <a href="{{ site.github.url }}/courses/{{ course.syllabus }}">Syllabus</a>,
+        <a href="{{ site.github.url }}/courses/{{ course.evaluation1 }}">Evaluation1</a>,
+        <a href="{{ site.github.url }}/courses/{{ course.evaluation2 }}">Evaluation2</a></em> -->
+      </div>
+    {% endfor %}
+  </div>
+
   <div class="mb-5">
     <h5 class=" mb-3">Georgia Institute of Technology</h5>
     {% for course in site.data.courses.instructor %}
