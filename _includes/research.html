@@ -36,7 +36,10 @@
 <!--                 {% if item.related_info %}
                     <p style="font-size: 0.8em;"> <em>{{ item.related_info }}</em>  </p>
                 {% endif %} -->
-{% if item.related_info %} <em>{{ item.related_info }}</em>{% endif %}
+                
+{% if item.related_info %}
+                <p <em>{{ item.related_info }}</em> </p>
+            {% endif %}
                 
 <!--                 {% if item.url %}
                     <a href="{{ site.github.url }}/papers/{{ item.url }}" style="font-weight: bold;">{{ item.name }}</a>
