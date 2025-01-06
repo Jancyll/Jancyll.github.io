@@ -22,11 +22,22 @@
     {% for item in site.data.research.working_papers %}
         <div class="mb-3">
             <p class="mb-1">
-                {% if item.url %}
+
+                    {% if item.url %}
+                        {% if item.url contains 'https://www.' %}
+                            <a href="{{ item.url }}" style="font-weight: bold;">{{ item.name }}</a>
+                        {% else %}
+                            <a href="{{ site.github.url }}/papers/{{ item.url }}" style="font-weight: bold;">{{ item.name }}</a>
+                        {% endif %}
+                    {% else %}
+                        <a>{{ item.name }}</a>
+                    {% endif %}
+                
+<!--                 {% if item.url %}
                     <a href="{{ site.github.url }}/papers/{{ item.url }}" style="font-weight: bold;">{{ item.name }}</a>
                 {% else %}
                     <a>{{ item.name }}</a>
-                {% endif %}
+                {% endif %} -->
                 
 <!--                 {% if item.coauthors %}
                         <em>(with 
