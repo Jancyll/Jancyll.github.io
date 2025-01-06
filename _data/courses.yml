@@ -22,10 +22,10 @@ teaching_assistant:
     term: "Fall 2019"
 
 awards:
-  - name: 'Tech to Teaching Certificate'
-    institution: "Center for Teaching and Learning, Georgia Tech"
-    date: "2022"
-    url: "https://ctl.gatech.edu/content/tech-teaching-0"
+  # - name: 'Tech to Teaching Certificate'
+  #   institution: "Center for Teaching and Learning, Georgia Tech"
+  #   date: "2022"
+  #   url: "https://ctl.gatech.edu/content/tech-teaching-0"
   - name: "Outstanding Online Teaching Assistant"
     institution: "School of Economics, Georgia Tech"
     date: "2021"
