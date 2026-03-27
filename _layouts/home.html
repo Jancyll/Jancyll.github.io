@@ -1,0 +1,140 @@
+---
+layout: default
+---
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="row g-4 mb-4" style="padding-top: 0.5rem;">
+    <div class="col-md-3 col-12">
+      <img src="{{ site.github.url }}/assets/img/L1006383_3.jpg" alt="Jancy Ling Liu" class="home-photo">
+      <div class="social-icons mt-2">
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.link }}" title="{{ item.icon }}"><i class="{{ item.prefix }} fa-{{ item.icon }}"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-md-9 col-12 home-bio">
+      <h1>Jancy Ling Liu</h1>
+      <p class="subtitle">Assistant Professor of Economics, The College of Wooster</p>
+      <p>Welcome! I am an Assistant Professor of Economics at the <a href="https://www.wooster.edu/">College of Wooster</a>. I received my Ph.D. in Economics from the Georgia Institute of Technology in 2024.</p>
+      <p>I study how people, the environment, and policy interact. Using econometric and experimental methods, my research examines how the energy transition and policy changes such as the Inflation Reduction Act and reproductive rights legislation affect local communities, including migration, mental health, housing markets, labor markets, and firm responses.</p>
+      <p><strong>Fields:</strong> Environmental and Energy Economics, Applied Microeconomics, Urban Economics, Experimental Economics.</p>
+      <p>Contact me at <a href="mailto:jliu@wooster.edu">jliu@wooster.edu</a>.</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- UPDATES -->
+<section id="updates">
+  <h2 class="section-title">Updates</h2>
+  <div class="news-item">
+    <span class="news-date">Mar 2026</span>
+    <span>"The Market Value of Reproductive Rights" released as <a href="https://www.nber.org/papers/w34921">NBER Working Paper #34921</a> [<a href="{{ site.github.url }}/papers/w34921.pdf">PDF</a>].</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Mar 2026</span>
+    <span>Presenting "Can Place-Based Incentives Accelerate the Energy Transition?" at the <a href="https://www.china-ces.org/Conferences/ConferenceDefault.aspx?ID=3060">2026 CES North American Annual Conference</a>, Emory University, Atlanta (Mar 28–29).</span>
+  </div>
+</section>
+
+<hr>
+
+<!-- RESEARCH -->
+<section id="research">
+  <h2 class="section-title">Working Papers</h2>
+  {% for item in site.data.research.working_papers %}
+    <div class="paper-entry">
+      <p style="margin-bottom: 0.25rem;">
+        {% if item.url %}
+          {% if item.url contains 'https://' %}
+            <a href="{{ item.url }}" class="paper-title">{{ item.name }}</a>
+          {% else %}
+            <a href="{{ site.github.url }}/papers/{{ item.url }}" class="paper-title">{{ item.name }}</a>
+          {% endif %}
+        {% else %}
+          <span class="paper-title-plain">{{ item.name }}</span>
+        {% endif %}
+        {% if item.related_info %}
+          <br><span class="paper-meta">{{ item.related_info }}{% if item.pdf %} [<a href="{{ site.github.url }}/papers/{{ item.pdf }}">PDF</a>]{% endif %}</span>
+        {% endif %}
+        {% if item.coauthors %}
+          <br><span class="paper-coauthors">with {% for coauthor in item.coauthors %}{% if coauthor.url %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% else %}{{ coauthor.name }}{% endif %}{% if forloop.last == false %}{% if forloop.length > 2 %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif %}{% else %} and {% endif %}{% endif %}{% endfor %}</span>
+        {% endif %}
+      </p>
+      {% if item.abstract and item.abstract != '' %}
+        <button class="abstract-toggle" onclick="var el=this.nextElementSibling; el.style.display=el.style.display==='none'?'block':'none'; this.textContent=el.style.display==='none'?'[+ Abstract]':'[− Abstract]';">[+ Abstract]</button>
+        <div class="paper-abstract" style="display: none;">{{ item.abstract }}</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+  {% if site.data.research.works_in_progress.size > 0 %}
+  <h2 class="section-title" style="margin-top: 2rem;">Selected Work in Progress</h2>
+  {% for item in site.data.research.works_in_progress %}
+    <div class="paper-entry">
+      <p style="margin-bottom: 0.25rem;">
+        <span class="paper-title-plain">{{ item.name }}</span>
+        {% if item.coauthors %}
+          <br><span class="paper-coauthors">with {% for coauthor in item.coauthors %}{% if coauthor.url %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% else %}{{ coauthor.name }}{% endif %}{% if forloop.last == false %}{% if forloop.length > 2 %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif %}{% else %} and {% endif %}{% endif %}{% endfor %}</span>
+        {% endif %}
+      </p>
+    </div>
+  {% endfor %}
+  {% endif %}
+
+  <h2 class="section-title" style="margin-top: 2rem;">Publications</h2>
+  {% for item in site.data.research.published_papers %}
+    <div class="paper-entry">
+      {% if item.url %}
+        <p class="citation-text" style="margin-bottom: 0.25rem;"><a href="{{ item.url }}">{{ item.citation }}</a></p>
+      {% else %}
+        <p class="citation-text" style="margin-bottom: 0.25rem;">{{ item.citation }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+</section>
+
+<hr>
+
+<!-- MEDIA & POLICY BRIEFS -->
+<section id="media">
+  <h2 class="section-title">Media &amp; Policy Briefs</h2>
+  {% if site.data.research.policy_briefs.size > 0 %}
+  <div class="teaching-group">
+    <h4 class="subsection-title">Policy Briefs &amp; Reports</h4>
+    {% for item in site.data.research.policy_briefs %}
+      <div class="course-item"><a href="{{ item.url }}">{{ item.name }}</a></div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if site.data.research.media_coverage.size > 0 %}
+  <div class="teaching-group">
+    <h4 class="subsection-title">Selected Media Coverage</h4>
+    {% for item in site.data.research.media_coverage %}
+      <div class="course-item"><a href="{{ item.url }}">{{ item.name }}</a> <span class="course-term">— {{ item.outlet }}, {{ item.date }}</span></div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+
+<hr>
+
+<!-- TEACHING -->
+<section id="teaching">
+  <h2 class="section-title">Teaching</h2>
+  <div class="teaching-group">
+    <h4 class="subsection-title">The College of Wooster</h4>
+    {% for course in site.data.courses.wooster_instructor %}
+      <div class="course-item">{{ course.name }} <span class="course-term">— {{ course.term }}</span></div>
+    {% endfor %}
+  </div>
+  <div class="teaching-group">
+    <h4 class="subsection-title">Georgia Institute of Technology — Instructor</h4>
+    {% for course in site.data.courses.instructor %}
+      <div class="course-item">{{ course.name }} <span class="course-term">— {{ course.term }}</span></div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,81 @@
+<div class="container my-4">
+  <h2 class="section-title">Research</h2>
+
+  <!-- Working Papers -->
+  <h4 class="subsection-title">Working Papers</h4>
+  {% for item in site.data.research.working_papers %}
+    <div class="paper-entry">
+      <p class="mb-1">
+        {% if item.url %}
+          {% if item.url contains 'https://www.' %}
+            <a href="{{ item.url }}" class="paper-title">{{ item.name }}</a>
+          {% else %}
+            <a href="{{ site.github.url }}/papers/{{ item.url }}" class="paper-title">{{ item.name }}</a>
+          {% endif %}
+        {% else %}
+          <span class="paper-title" style="color: #2d2d2d;">{{ item.name }}</span>
+        {% endif %}
+
+        {% if item.related_info %}
+          <br><span class="paper-meta">{{ item.related_info }}</span>
+        {% endif %}
+
+        {% if item.coauthors %}
+          <br><span class="paper-coauthors">with {% for coauthor in item.coauthors
+            %}{% if coauthor.url
+              %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{%-
+            else
+              %}{{ coauthor.name }}{%-
+            endif %}{% if forloop.last == false
+              %}{% if forloop.length > 2
+                %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif
+                %}{% else
+                %} and {% endif
+              %}{% endif
+          %}{% endfor %}</span>
+        {% endif %}
+      </p>
+
+      {% if item.abstract and item.abstract != '' %}
+        <button class="abstract-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.nextElementSibling.style.display === 'none' ? '[+ Abstract]' : '[- Abstract]';">[+ Abstract]</button>
+        <div class="paper-abstract" style="display: none;">{{ item.abstract }}</div>
+      {% endif %}
+    </div>
+  {% endfor %}
+
+  <!-- Work in Progress -->
+  <h4 class="subsection-title">Selected Work in Progress</h4>
+  {% for item in site.data.research.works_in_progress %}
+    <div class="paper-entry">
+      <p class="mb-1">
+        <span class="paper-title" style="color: #2d2d2d;">{{ item.name }}</span>
+        {% if item.coauthors %}
+          <br><span class="paper-coauthors">with {% for coauthor in item.coauthors
+            %}{% if coauthor.url
+              %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{%-
+            else
+              %}{{ coauthor.name }}{%-
+            endif %}{% if forloop.last == false
+              %}{% if forloop.length > 2
+                %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif
+                %}{% else
+                %} and {% endif
+              %}{% endif
+          %}{% endfor %}</span>
+        {% endif %}
+      </p>
+    </div>
+  {% endfor %}
+
+  <!-- Publications -->
+  <h4 class="subsection-title">Publications</h4>
+  {% for item in site.data.research.published_papers %}
+    <div class="paper-entry">
+      {% if item.url %}
+        <p class="citation-text mb-1"><a href="{{ item.url }}" style="color: #3a3a3a;">{{ item.citation }}</a></p>
+      {% else %}
+        <p class="citation-text mb-1">{{ item.citation }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,9 @@
+menu:
+- {name: 'Research', url: '/research'}
+- {name: 'Teaching', url: '/teaching'}
+- {name: 'CV', url: '/cv'}
+
+social:
+- {icon: 'envelope', link: 'mailto: jliu@wooster.edu', prefix: 'fas'}
+- {icon: 'bluesky', link: 'https://bsky.app/profile/econling.bsky.social', prefix: 'fab'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/jancy-ling-liu-2018416a/', prefix: 'fab'}

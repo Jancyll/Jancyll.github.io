@@ -1,0 +1,8 @@
+<footer>
+  <div class="social-media-icons mb-2">
+    {% for item in site.data.settings.social %}
+      <a href="{{ item.link }}" class="ms-2 fs-5"><i class="{{ item.prefix }} fa-{{ item.icon }}"></i></a>
+    {% endfor %}
+  </div>
+  <div>&copy; {{ 'now' | date: '%Y' }} Jancy Ling Liu</div>
+</footer>
