@@ -30,6 +30,10 @@ layout: default
 <section id="updates">
   <h2 class="section-title">Updates</h2>
   <div class="news-item">
+    <span class="news-date">Apr 2026</span>
+    <span>"Can Place-Based Incentives Accelerate the Energy Transition?" released as <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6411041">SSRN Working Paper</a>.</span>
+  </div>
+  <div class="news-item">
     <span class="news-date">Mar 2026</span>
     <span>"The Market Value of Reproductive Rights" released as <a href="https://www.nber.org/papers/w34921">NBER Working Paper #34921</a> [<a href="{{ site.github.url }}/papers/w34921.pdf">PDF</a>].</span>
   </div>
@@ -58,6 +62,9 @@ layout: default
         {% endif %}
         {% if item.related_info %}
           <br><span class="paper-meta">{{ item.related_info }}{% if item.pdf %} [<a href="{{ site.github.url }}/papers/{{ item.pdf }}">PDF</a>]{% endif %}</span>
+        {% endif %}
+        {% if item.updates %}
+          <br><span class="paper-meta">{{ item.updates }}</span>
         {% endif %}
         {% if item.coauthors %}
           <br><span class="paper-coauthors">with {% for coauthor in item.coauthors %}{% if coauthor.url %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% else %}{{ coauthor.name }}{% endif %}{% if forloop.last == false %}{% if forloop.length > 2 %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif %}{% else %} and {% endif %}{% endif %}{% endfor %}</span>
