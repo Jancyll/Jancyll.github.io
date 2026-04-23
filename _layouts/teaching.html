@@ -5,30 +5,24 @@ layout: default
 <div class="container my-4">
   <h2 class="section-title">Teaching</h2>
 
-  {% if site.data.courses.wooster_instructor.size > 0 %}
   <div class="teaching-group">
     <h4 class="subsection-title">The College of Wooster</h4>
     {% for course in site.data.courses.wooster_instructor %}
       <div class="course-item">{{ course.name }} <span class="course-term">— {{ course.term }}</span></div>
     {% endfor %}
   </div>
-  {% endif %}
 
-  {% if site.data.courses.instructor.size > 0 %}
   <div class="teaching-group">
     <h4 class="subsection-title">Georgia Institute of Technology — Instructor</h4>
     {% for course in site.data.courses.instructor %}
       <div class="course-item">{{ course.name }} <span class="course-term">— {{ course.term }}</span></div>
     {% endfor %}
   </div>
-  {% endif %}
 
-  {% if site.data.courses.teaching_assistant.size > 0 %}
   <div class="teaching-group">
     <h4 class="subsection-title">Georgia Institute of Technology — Teaching Assistant</h4>
     {% for course in site.data.courses.teaching_assistant %}
       <div class="course-item">{{ course.name }} <span class="course-term">— {{ course.term }}</span></div>
     {% endfor %}
   </div>
-  {% endif %}
 </div>
