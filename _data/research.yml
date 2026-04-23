@@ -1,6 +1,7 @@
 working_papers:
   - name: 'Can Place-Based Incentives Accelerate the Energy Transition?'
-    url: 'https://www.dropbox.com/scl/fi/nrionnirrmzgqogbc9t6i/Place_Based_Incentives_03_2026.pdf?rlkey=vwz2ycb457y6jxz0jjgm8vai9&st=7pd9bvb2&dl=0'
+    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6411041'
+    updates: 'April 2026: released as SSRN working paper'
     abstract: 'This paper examines the design and effectiveness of place-based industrial policy in renewable energy. We study the Inflation Reduction Act''s energy-community tax credits, which offered bonus subsidies to projects located in economically vulnerable, fossil-fuel reliant areas. Reduced form estimates show no significant overall changes in interconnection requests in eligible counties but substantial heterogeneity by policy eligibility, region, and technology. We then develop and estimate a structural model of project location choice to evaluate alternative policy designs. Counterfactual simulations quantify key trade-offs between developer surplus, environmental benefits, fiscal spending, and support for vulnerable communities in the design of place-based policies.'
     coauthors:
       - name: 'Gaurav Doshi'

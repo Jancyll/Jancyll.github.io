@@ -7,7 +7,7 @@
     <div class="paper-entry">
       <p class="mb-1">
         {% if item.url %}
-          {% if item.url contains 'https://www.' %}
+          {% if item.url contains '://' %}
             <a href="{{ item.url }}" class="paper-title">{{ item.name }}</a>
           {% else %}
             <a href="{{ site.github.url }}/papers/{{ item.url }}" class="paper-title">{{ item.name }}</a>
@@ -18,6 +18,10 @@
 
         {% if item.related_info %}
           <br><span class="paper-meta">{{ item.related_info }}</span>
+        {% endif %}
+
+        {% if item.updates %}
+          <br><span class="paper-meta">{{ item.updates }}</span>
         {% endif %}
 
         {% if item.coauthors %}
