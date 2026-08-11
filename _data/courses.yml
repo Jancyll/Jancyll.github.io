@@ -5,6 +5,8 @@ wooster_instructor:
     term: "Fall 2024, Spring 2025/2026"
   - name: "Environmental and Resource Economics"
     term: "Fall 2025"
+  - name: "Advanced Econometrics"
+    term: "Fall 2026"
 
 instructor:
   - name: "Economics and Policy"

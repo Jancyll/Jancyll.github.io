@@ -1,7 +1,15 @@
 working_papers:
-  - name: 'Can Place-Based Incentives Accelerate the Energy Transition?'
+  - name: 'The Decline of Coal and Local Mortality'
+    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6839178'
+    abstract: 'The health consequences of sectoral transitions are theoretically ambiguous. Reduced industrial activity and associated pollution may improve health, while economic deterioration may worsen it. We examine these competing forces in the context of coal’s decline, linking restricted-access mortality data with records of coal-fired power plant and mine activity from 2004 to 2019. Power sector contractions reduce elderly mortality, while mining contractions increase mortality, especially among working-age adults. Declines in coal activity increase overdose deaths in both sectors. Pollution reductions alone provide an incomplete account of coal’s health consequences, as environmental and economic channels generate heterogeneous effects across sectors and populations.'
+    coauthors:
+      - name: 'Dylan Brewer'
+        url: 'https://www.dylanbrewer.com/'
+      - name: 'Eleanor Krause'
+        url: 'https://sites.google.com/view/eleanorkrause'
+  - name: 'The Design and Welfare Effects of Place-Based Policy in the Energy Transition'
     url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6411041'
-    abstract: 'This paper examines the design and effectiveness of place-based industrial policy in renewable energy. We study the Inflation Reduction Act''s energy-community tax credits, which offered bonus subsidies to projects located in economically vulnerable, fossil-fuel reliant areas. Reduced form estimates show no significant overall changes in interconnection requests in eligible counties but substantial heterogeneity by policy eligibility, region, and technology. We then develop and estimate a structural model of project location choice to evaluate alternative policy designs. Counterfactual simulations quantify key trade-offs between developer surplus, environmental benefits, fiscal spending, and support for vulnerable communities in the design of place-based policies.'
+    abstract: 'We study the design and effectiveness of place-based industrial policy in the energy sector, through the Inflation Reduction Act''s energy-community tax credits, which subsidize renewable investment in economically vulnerable and fossil-fuel reliant areas. Eligibility moderately increases renewable interconnection activity, yet the most distressed counties see no gains. We use a structural model of location choice to explain why and evaluate alternative designs. Relative to a place-blind subsidy, place-based policies generate marginal value of public funds ranging from 0.7-2.2 for wind and 1.9-2.9 for solar. Modest subsidies tied to resource quality and market access outperform more generous or broad vulnerability-based targeting.'
     coauthors:
       - name: 'Gaurav Doshi'
         url: 'https://www.gauravecon.com/'
@@ -51,12 +59,10 @@ working_papers:
         url: 'https://besedes.econ.gatech.edu/'
 
 works_in_progress:
-  - name: 'The Impact of the Energy Transition on Local Mortality'
+  - name: 'Disaster Bundling and Internal Migration'
     coauthors:
-      - name: 'Dylan Brewer'
-        url: 'https://www.dylanbrewer.com/'
-      - name: 'Eleanor Krause'
-        url: 'https://sites.google.com/view/eleanorkrause'
+      - name: 'Xibo Wan'
+      - name: 'Peng Huang'
   - name: 'The Long-Term Labor Market Effects of Energy Transition'
     coauthors:
       - name: 'Dylan Brewer'
