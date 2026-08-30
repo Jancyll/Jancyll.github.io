@@ -30,7 +30,7 @@ working_papers:
   - name: 'Are People Fleeing States with Abortion Bans?'
     url: 'https://www.nber.org/papers/w33328'
     pdf: 'w33328.pdf'
-    status: 'Revise and Resubmit at <em>Journal of Health Economics</em>'
+    status: 'R&amp;R at <em>Journal of Health Economics</em>'
     related_info: 'NBER Working Paper #33328'
     abstract: 'We investigate whether reproductive rights affect migration. We use a synthetic difference-in-differences design that leverages variation from the 2022 Dobbs decision, which allowed states to ban abortion, and population flows based on change-of-address data from the United States Postal Service. The results indicate that bans increase net migration outflows, with effect sizes growing throughout the year after the decision. The effects are more prominent for single-person households than family households, which may reflect larger effects on younger adults. We also find suggestive evidence of impacts for states hostile towards abortion in ways other than having total bans.'
     coauthors:
