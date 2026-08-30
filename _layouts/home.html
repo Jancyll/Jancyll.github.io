@@ -60,11 +60,11 @@ layout: default
         {% else %}
           <span class="paper-title-plain">{{ item.name }}</span>
         {% endif %}
+        {% if item.status %}
+          <br><span class="paper-meta">{{ item.status }}</span>
+        {% endif %}
         {% if item.related_info %}
           <br><span class="paper-meta">{{ item.related_info }}{% if item.pdf %} [<a href="{{ site.github.url }}/papers/{{ item.pdf }}">PDF</a>]{% endif %}</span>
-        {% endif %}
-        {% if item.updates %}
-          <br><span class="paper-meta">{{ item.updates }}</span>
         {% endif %}
         {% if item.coauthors %}
           <br><span class="paper-coauthors">with {% for coauthor in item.coauthors %}{% if coauthor.url %}<a href="{{ coauthor.url }}">{{ coauthor.name }}</a>{% else %}{{ coauthor.name }}{% endif %}{% if forloop.last == false %}{% if forloop.length > 2 %}{% if forloop.rindex0 == 1 %}, and {% else %}, {% endif %}{% else %} and {% endif %}{% endif %}{% endfor %}</span>

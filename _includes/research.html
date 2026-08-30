@@ -16,12 +16,12 @@
           <span class="paper-title" style="color: #2d2d2d;">{{ item.name }}</span>
         {% endif %}
 
-        {% if item.related_info %}
-          <br><span class="paper-meta">{{ item.related_info }}</span>
+        {% if item.status %}
+          <br><span class="paper-meta">{{ item.status }}</span>
         {% endif %}
 
-        {% if item.updates %}
-          <br><span class="paper-meta">{{ item.updates }}</span>
+        {% if item.related_info %}
+          <br><span class="paper-meta">{{ item.related_info }}</span>
         {% endif %}
 
         {% if item.coauthors %}
