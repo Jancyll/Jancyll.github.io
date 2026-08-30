@@ -61,7 +61,7 @@ layout: default
           <span class="paper-title-plain">{{ item.name }}</span>
         {% endif %}
         {% if item.status %}
-          <br><span class="paper-meta">{{ item.status }}</span>
+          <br><span class="paper-status">{{ item.status }}</span>
         {% endif %}
         {% if item.related_info %}
           <br><span class="paper-meta">{{ item.related_info }}{% if item.pdf %} [<a href="{{ site.github.url }}/papers/{{ item.pdf }}">PDF</a>]{% endif %}</span>
